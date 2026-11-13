@@ -9,7 +9,7 @@ window.DASHBOARD_CONFIG = {
   /* ---------- 1. CLIENT + BRANDING ---------- */
   client:   { name: 'AZ Marketing', reportTitle: 'Marketing Dashboard' },
   branding: {
-    logo: 'assets/logo.svg',     // top-left. SVG/PNG. Falls back to a monogram if missing.
+    logo: 'assets/az-logo.png',     // top-left. SVG/PNG. Falls back to a monogram if missing.
     logoDark: null,              // optional logo for dark mode
     logoWide: false,             // true for a wide wordmark logo (also set showName:false)
     showName: true,              // show client name next to the logo
