@@ -370,8 +370,8 @@ body.d-glance { --topbar-h: 64px; }
 .d-glance .chart { flex: 1 1 0; height: auto; min-height: 110px; }
 .d-glance .chart svg { height: 100%; }
 
-.d-glance .bars { flex: 1; min-height: 0; overflow: auto; align-content: start; gap: 0; }
-.d-glance .bar-row { min-height: 30px; grid-template-columns: minmax(96px, 36%) minmax(0, 1fr) auto; gap: 10px; }
+.d-glance .bars { flex: 1; min-height: 0; overflow-x: hidden; overflow-y: auto; align-content: start; gap: 0; grid-auto-rows: minmax(30px, 52px); }
+.d-glance .bar-row { min-height: 30px; margin: 0; padding: 0 4px; grid-template-columns: minmax(96px, 36%) minmax(0, 1fr) auto; gap: 10px; }
 .d-glance .bar-track { height: 8px; }
 .d-glance .bar-name, .d-glance .bar-val { font-size: 12px; }
 .d-glance .funnel { flex: 1; min-height: 0; align-content: space-evenly; gap: 4px; }
