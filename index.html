@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marketing Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+
+  <div class="app">
+    <!-- LEFT: brand (top) + channel navigation -->
+    <aside class="sidebar" id="sidebar" aria-label="Primary">
+      <div class="brand" id="brand"></div>
+      <nav class="nav" id="nav" aria-label="Channels"></nav>
+      <div class="sidebar-foot">
+        <button class="status" id="healthBtn" type="button" aria-haspopup="dialog" aria-expanded="false"></button>
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle dark mode"></button>
+        <button class="icon-btn" id="navToggle" type="button" aria-label="Collapse sidebar"></button>
+        <div class="popover pop-up" id="healthPop" hidden></div>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="main">
+      <!-- TOP: page title (left) + refresh + date filter (right) -->
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open navigation"></button>
+        <div class="titles">
+          <div class="eyebrow" id="eyebrow"></div>
+          <h1 id="title"></h1>
+          <p class="source" id="source"></p>
+        </div>
+        <div class="actions">
+          <div class="seg" id="densSeg" role="group" aria-label="Layout density"></div>
+          <button class="btn" id="refreshBtn" type="button"></button>
+          <div class="dropdown">
+            <button class="btn" id="dateBtn" type="button" aria-haspopup="dialog" aria-expanded="false"></button>
+            <div class="popover" id="datePop" hidden></div>
+          </div>
+        </div>
+      </header>
+      <main class="content" id="view" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="assets/demo-data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
