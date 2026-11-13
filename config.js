@@ -64,7 +64,7 @@ window.DASHBOARD_CONFIG = {
       table: { glanceColumns: ['spend', 'conversions', 'cpa', 'revenue', 'roas'], title: 'Campaign detail', columns: ['spend', 'impressions', 'clicks', 'ctr', 'cpc', 'conversions', 'cpa', 'revenue', 'roas'], sortBy: 'spend' }
     },
     {
-      id: 'linkedin-ads', label: 'Linkedin Ads', icon: 'target', section: 'Paid media', group: 'paid',
+      id: 'linkedin-ads', label: 'Linkedin Ads', icon: 'users', section: 'Paid media', group: 'paid',
       tab: 'LinkedinAds', demo: 'linkedin',
       columns: { date: 'Date', dimension: 'Campaign', dimension2: 'Campaign Type', spend: 'Cost', impressions: 'Impressions', clicks: 'Clicks', conversions: 'Conversions', revenue: 'Conv. Value' },
       kpis: ['spend', 'revenue', 'roas', 'cpa', 'impressions', 'clicks', 'ctr', 'cpc'],
