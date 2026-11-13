@@ -65,7 +65,7 @@ window.DASHBOARD_CONFIG = {
     },
     {
       id: 'linkedin-ads', label: 'Linkedin Ads', icon: 'users', section: 'Paid media', group: 'paid',
-      tab: 'LinkedinAds', demo: 'linkedin',
+      tab: 'Linkedin Ads', demo: 'linkedin',
       columns: { date: 'Date', dimension: 'Campaign', dimension2: 'Campaign Type', spend: 'Cost', impressions: 'Impressions', clicks: 'Clicks', conversions: 'Conversions', revenue: 'Conv. Value' },
       kpis: ['spend', 'revenue', 'roas', 'cpa', 'impressions', 'clicks', 'ctr', 'cpc'],
       trend: { title: 'Performance trend', metrics: ['spend', 'revenue', 'roas', 'conversions'] },
