@@ -64,6 +64,16 @@ window.DASHBOARD_CONFIG = {
       table: { glanceColumns: ['spend', 'conversions', 'cpa', 'revenue', 'roas'], title: 'Campaign detail', columns: ['spend', 'impressions', 'clicks', 'ctr', 'cpc', 'conversions', 'cpa', 'revenue', 'roas'], sortBy: 'spend' }
     },
     {
+      id: 'linkedin-ads', label: 'Linkedin Ads', icon: 'target', section: 'Paid media', group: 'paid',
+      tab: 'LinkedinAds', demo: 'linkedin',
+      columns: { date: 'Date', dimension: 'Campaign', dimension2: 'Campaign Type', spend: 'Cost', impressions: 'Impressions', clicks: 'Clicks', conversions: 'Conversions', revenue: 'Conv. Value' },
+      kpis: ['spend', 'revenue', 'roas', 'cpa', 'impressions', 'clicks', 'ctr', 'cpc'],
+      trend: { title: 'Performance trend', metrics: ['spend', 'revenue', 'roas', 'conversions'] },
+      breakdown: { title: 'Top campaigns', by: 'dimension', metrics: ['spend', 'revenue', 'roas'], limit: 8 },
+      secondary: { type: 'breakdown', title: 'Performance by campaign type', by: 'dimension2', metrics: ['spend', 'revenue', 'conversions'] },
+      table: { glanceColumns: ['spend', 'conversions', 'cpa', 'revenue', 'roas'], title: 'Campaign detail', columns: ['spend', 'impressions', 'clicks', 'ctr', 'cpc', 'conversions', 'cpa', 'revenue', 'roas'], sortBy: 'spend' }
+    },
+    {
       id: 'youtube-ads', label: 'YouTube Ads', icon: 'play', section: 'Paid media', group: 'paid',
       tab: 'YouTube Ads', demo: 'youtube',
       columns: { date: 'Date', dimension: 'Campaign', dimension2: 'Ad Format', spend: 'Cost', impressions: 'Impressions', views: 'Views', clicks: 'Clicks', conversions: 'Conversions', revenue: 'Conv. Value' },
